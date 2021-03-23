@@ -8,7 +8,11 @@ class Personnage{
 
     // class = commence par une majuscule
     // attributs private = commence par un _
-    
+
+    public function speak(){
+        echo "Hello !";
+    }
+
     public function damage(){
         
     }
@@ -18,4 +22,6 @@ class Personnage{
     }
 }
 
+$perso = new Personnage; // Création d'un objet avec la classe Personnage
+$perso->speak();
 ?>
