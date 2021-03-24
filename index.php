@@ -16,9 +16,14 @@ class Personnage{
     public function displayExp(){
         echo $this->_experience;
     }
+
+    public function winXp(){
+        $this->_experience = $this->_experience +1;
+    }
 }
 
 $perso = new Personnage; // Création d'un objet avec la classe Personnage
 $perso->speak();
+$perso->winXp();
 $perso->displayExp();
 ?>
