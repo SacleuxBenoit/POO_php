@@ -3,7 +3,7 @@
 class Personnage{
     private $_force;
     private $_localisation;
-    private $_experience;
+    private $_experience = 1;
     private $_degats;
 
     // class = commence par une majuscule
@@ -13,15 +13,12 @@ class Personnage{
         echo "Hello !";
     }
 
-    public function damage(){
-        
-    }
-
-    public function winXp(){
-
+    public function displayExp(){
+        echo $this->_experience;
     }
 }
 
 $perso = new Personnage; // Création d'un objet avec la classe Personnage
 $perso->speak();
+$perso->displayExp();
 ?>
